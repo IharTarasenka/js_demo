@@ -1,0 +1,16 @@
+{
+  "name": "js_demo",
+  "version": "1.0.0",
+  "description": "Demo automation project",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "expect-playwright": "^0.8.0",
+    "jest": "^27.0.0",
+    "jest-allure": "^0.1.3",
+    "jest-playwright-preset": "^1.7.0",
+    "jshint": "^2.13.3",
+    "playwright": "^1.22.0"
+  }
+}

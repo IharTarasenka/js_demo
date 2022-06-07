@@ -30,7 +30,7 @@ jobs:
       run: yarn run test
     - name: Report
       if: always()
-      run: allure generate .\allure-results\ -o .\allure-report\ --clean
+      run: allure generate allure-results -o allure-report --clean
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       if: always()

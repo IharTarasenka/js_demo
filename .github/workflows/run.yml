@@ -30,11 +30,11 @@ jobs:
       run: yarn run test
     - name: Report
       if: always()
-      run: allure generate output/
+      run: allure generate allure-results/
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       if: always()
       with:
-        name: allure-report
-        path: allure-report/
+        name: allure-results
+        path: allure-results/
         retention-days: 10

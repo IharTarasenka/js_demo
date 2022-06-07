@@ -21,9 +21,6 @@ jobs:
         cache: 'npm'
     - name: install Alure
       run: npm install -g allure-commandline --save-dev
-    - name: Create a temp artifact folder
-      run: |
-        mkdir output
     - name: Install yarn
       run: yarn
     - name: Run tests

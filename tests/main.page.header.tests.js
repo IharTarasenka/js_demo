@@ -16,11 +16,7 @@ describe('YA.RU header ', () => {
     });
 
     test('should include Sign in button', async () => {
-        expect(await page.locator("div.b-inline").innerText()).toEqual("Войти в почту")
-    });
-
-    test('should include Start page button', async () => {
-        let bText = await page.locator("//a[contains(@class, 'b-sethome')]").innerText();
-        expect(bText).toEqual("Сделать стартовой");
+        let text = (await page.locator("div.b-inline").innerText()).replace(/\u00a0/g, ' ');
+        expect(text).toEqual('Войти в почту');
     });
 });

@@ -15,3 +15,5 @@
 `allure serve` - отобразить результаты отчета в браузере
 
 Html версия отчета - `allure generate`.
+
+Html версия отчета - `allure open ~path~`.

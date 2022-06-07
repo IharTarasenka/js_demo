@@ -21,13 +21,16 @@ jobs:
         cache: 'npm'
     - name: install Alure
       run: npm install -g allure-commandline --save-dev
+    - name: Create a temp artifact folder
+      run: |
+        mkdir output
     - name: Install yarn
       run: yarn
     - name: Run tests
       run: yarn run test
     - name: Report
       if: always()
-      run: allure generate -o allure-report
+      run: allure generate output/
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       if: always()

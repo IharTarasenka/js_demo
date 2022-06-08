@@ -2,7 +2,7 @@
 module.exports = {
     verbose: true,
     testMatch: [
-      "**/tests/**/*.[jt]s?(x)"
+      "**/tests/*.[jt]s?(x)"
     ],
     testRunner: "jest-jasmine2",
     preset: "jest-playwright-preset",

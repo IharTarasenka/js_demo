@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Demo automation project",
   "scripts": {
-    "test": "jest"
+    "test": "jest -c=jest.config.js"
   },
   "devDependencies": {
     "expect-playwright": "^0.8.0",

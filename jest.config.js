@@ -9,7 +9,8 @@ module.exports = {
     testTimeout: 30000,
     setupFilesAfterEnv: [
       "expect-playwright",
-      "jest-allure/dist/setup"
-    ],
+      "jest-allure/dist/setup",
+      "./jest.setup.js"
+    ]
 };
 

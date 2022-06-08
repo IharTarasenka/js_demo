@@ -31,11 +31,6 @@ describe('YA.RU search box', () => {
     test('should voice serch button be enabled', async () => {
         expect(await page.locator(voiceSearch).isVisible()).toBeTruthy();
     });
-
-    test('should voice serch box be enabled', async () => {
-        await page.locator(searchBox).click();
-        expect(await page.locator(searchBox).isVisible()).toBeTruthy();
-    });
     
     test('should suggest displayed after enter text', async () => {
         await page.locator(searchBox).fill("Hello");

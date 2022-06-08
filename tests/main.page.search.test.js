@@ -32,7 +32,6 @@ describe('YA.RU search box', () => {
     test('should suggest displayed after enter text', async () => {
         await page.locator(searchBox).fill("Hello");
         let suggest = page.locator("div.mini-suggest__popup");
-        page.waitForSelector("div.mini-suggest__popup");
         expect(suggest.isVisible()).toBeTruthy();
     });
 

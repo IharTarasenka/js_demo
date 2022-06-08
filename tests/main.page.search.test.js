@@ -15,9 +15,9 @@ describe('YA.RU search box', () => {
         expect(suggest.isVisible()).toBeTruthy();
     });
 
-    test('should voice serch box be enabled', async () => {
+    test('should inpput clear be enabled', async () => {
         await page.locator(searchBox).fill("Hello");
-        expect(await page.locator(inpuClear).isVisible()).toBeTruthy();
+        expect(await page.locator(inpuClear).isEnabled()).toBeTruthy();
     });
 
 });

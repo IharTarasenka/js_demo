@@ -3,7 +3,7 @@ describe('YA.RU search box', () => {
 
     let buttonLocator = "button[type='submit']";
     let searchBox = "input#text";
-    // let inpuClear = "span.input__clear";
+    let inputClear = "span.input__clear";
 
     test('should button have correct text', async () => {
         expect(await page.locator(buttonLocator).innerText()).toEqual("Найти");
@@ -15,9 +15,9 @@ describe('YA.RU search box', () => {
         expect(suggest.isVisible()).toBeTruthy();
     });
 
-    // test('should inpput clear be enabled', async () => {
-    //     await page.locator(searchBox).fill("Hello");
-    //     expect(await page.locator(inpuClear).isEnabled()).toBeTruthy();
-    // });
+    test('should inpput clear be enabled', async () => {
+        await page.locator(searchBox).fill("Hello");
+        expect(await page.locator(inputClear).isEnabled()).toBeTruthy();
+    });
 
 });

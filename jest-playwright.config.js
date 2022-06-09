@@ -1,7 +1,7 @@
 module.exports = {
     browsers: ["chromium"],
     launchOptions: {
-        headless: true
+        headless: false
         // slowMo: 1500
     }
 };
